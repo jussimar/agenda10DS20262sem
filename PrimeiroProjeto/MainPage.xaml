@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrimeiroProjeto.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            <Label
+                Text="Calculadora IMC"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Nome"
+                SemanticProperties.HeadingLevel="Level2"
+             />
+
+
+            <Entry 
+                x:Name="nome"    
+                
+            />
+
+            <Label
+                Text="Peso"
+                SemanticProperties.HeadingLevel="Level2"
+             />
+
+            <Entry 
+                x:Name="peso"    
+    
+            />
+
+            <Label
+                Text="Altura"
+                SemanticProperties.HeadingLevel="Level2"
+             />
+
+            <Entry 
+                x:Name="altura"    
+    
+            />
+
+
+
+            <Button 
+                x:Name="calcular"
+                Text="Calcular IMC"
+                Clicked="calcular_Clicked"
+            />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
